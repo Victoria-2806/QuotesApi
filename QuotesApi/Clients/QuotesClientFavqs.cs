@@ -62,15 +62,5 @@ namespace QuotesApi.Clients
             var result = JsonConvert.DeserializeObject<QuoteFavqs>(content);
             return result;
         }
-
-        public async Task<QuoteFavqs> GetQuoteOfTheDayAsync()
-        {
-            var response = await httpClient.GetAsync($"/api/qotd");
-            var content = response.Content.ReadAsStringAsync().Result;
-            var result = JsonConvert.DeserializeObject<QuoteFavqs>(content);
-            return result;
-        }
-
-
     }
 }

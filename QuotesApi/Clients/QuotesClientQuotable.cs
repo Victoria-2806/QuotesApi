@@ -24,6 +24,5 @@ namespace TelegramQuotesBot.Client
             var result = JsonConvert.DeserializeObject<QuoteQuotable>(content);
             return result;
         }
-
     }
 }

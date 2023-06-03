@@ -38,15 +38,5 @@ namespace QuotesApi.Controllers
             QuotesClientFavqs client = new QuotesClientFavqs();
             return client.GetQuoteAsync(quoteId).Result;
         }
-
-        [HttpGet("quote-of-the-day")]
-        public async Task<ActionResult<QuoteFavqs>> GetQuoteOfTheDay()
-        {
-            QuotesClientFavqs client = new QuotesClientFavqs();
-            var result = await client.GetQuoteOfTheDayAsync();
-            return Ok(result);
-        }
-
-
     }
 }
