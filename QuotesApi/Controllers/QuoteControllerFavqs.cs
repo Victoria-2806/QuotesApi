@@ -4,9 +4,8 @@ using QuotesApi.Models;
 
 namespace QuotesApi.Controllers
 {
-
     [ApiController]
-    [Route("[controller]")]
+    [Route("/")]
 
     public class QuoteControllerFavqs : ControllerBase
     {
