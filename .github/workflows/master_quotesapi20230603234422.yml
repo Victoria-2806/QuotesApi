@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'QuotesApi20230603234422'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_45B8D0F718A0428CBB9BB3A8BDB2EE9C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_50D9C51D66AA4686970F5C002C23F76D }}
           package: .
