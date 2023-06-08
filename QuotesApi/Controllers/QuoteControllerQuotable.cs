@@ -5,7 +5,7 @@ using TelegramQuotesBot.Client;
 namespace QuotesApi.Controllers
 {
     [ApiController]
-    [Route("/")]
+    [Route("[controller]")]
 
     public class QuoteControllerQuotable : ControllerBase
     {
@@ -16,7 +16,8 @@ namespace QuotesApi.Controllers
         }
 
 
-        [HttpGet("random")]
+        [HttpGet]
+        [Route("random")]
         public QuoteQuotable QuoteQuotable()
         {
             QuotesClientQuotable client = new QuotesClientQuotable();

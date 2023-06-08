@@ -5,7 +5,7 @@ using QuotesApi.Models;
 namespace QuotesApi.Controllers
 {
     [ApiController]
-    [Route("/")]
+    [Route("[controller]")]
 
     public class QuoteControllerFavqs : ControllerBase
     {
@@ -15,7 +15,8 @@ namespace QuotesApi.Controllers
             _logger = logger;
         }
 
-        [HttpGet("quotes")]
+        [HttpGet]
+        [Route("quotes")]
         public async Task<ActionResult<List<QuoteFavqs>>> GetAllQuotes()
         {
             QuotesClientFavqs client = new QuotesClientFavqs();
@@ -23,7 +24,8 @@ namespace QuotesApi.Controllers
             return Ok(quotes);
         }
 
-        [HttpGet("quotes/{authorName}")]
+        [HttpGet]
+        [Route("quotes/{authorName}")]
         public async Task<ActionResult<List<QuoteFavqs>>> GetQuotesByAuthor(string authorName)
         {
             QuotesClientFavqs client = new QuotesClientFavqs();
@@ -31,7 +33,8 @@ namespace QuotesApi.Controllers
             return Ok(quotes);
         }
 
-        [HttpGet("{quoteId}", Name = "quote")]
+        [HttpGet]
+        [Route("{quoteId}", Name = "quote")]
         public QuoteFavqs QuoteFavqs(string quoteId)
         {
             QuotesClientFavqs client = new QuotesClientFavqs();

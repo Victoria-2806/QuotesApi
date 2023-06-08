@@ -11,7 +11,7 @@ builder.Services.ConfigureSwaggerGen(setup =>
 {
     setup.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
     {
-        Title = "Quotes api",
+        Title = "Quotes Api",
         Version = "v1"
     });
 });
@@ -21,6 +21,12 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 
 app.UseSwagger();
+
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Quotes API V1");
+    c.RoutePrefix = string.Empty;
+});
 
 if (app.Environment.IsDevelopment())
 {

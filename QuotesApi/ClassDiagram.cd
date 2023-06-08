@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="QuotesApi.Constants">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAIAAAAAAAABAAAIAAAAAAAA=</HashCode>
+      <FileName>Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuotesApi.Models.QuoteFavqs">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAgAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\QuoteFavqs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuotesApi.Models.QuoteQuotable">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\QuoteQuotable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuotesApi.Controllers.QuoteControllerQuotable">
+    <Position X="9.5" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\QuoteControllerQuotable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuotesApi.Controllers.QuoteControllerFavqs">
+    <Position X="1" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAIAAAAAAAAgBAAAAAAAA=</HashCode>
+      <FileName>Controllers\QuoteControllerFavqs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuotesApi.Clients.QuotesClientFavqs">
+    <Position X="3.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAABAAAQAAAAAAAAAAAAAAAAAhAAABAAAAAAAA=</HashCode>
+      <FileName>Clients\QuotesClientFavqs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TelegramQuotesBot.Client.QuotesClientQuotable">
+    <Position X="7.5" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAIAAAAAAAA=</HashCode>
+      <FileName>Clients\QuotesClientQuotable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
