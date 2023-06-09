@@ -28,7 +28,7 @@ namespace QuotesApi.Clients
                 string jsonResponse = await response.Content.ReadAsStringAsync();
                 var result = JsonConvert.DeserializeObject<JObject>(jsonResponse);
                 quotes = result["quotes"].ToObject<List<QuoteFavqs>>();
-                quotes = quotes.Take(5).ToList();
+                quotes = quotes.Take(28).ToList();
             }
             else
             {
